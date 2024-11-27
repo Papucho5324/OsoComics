@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarInventario">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/papeleria"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textSize="30sp"
+            />
+
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:dividerInsetStart="20dp"
+            app:dividerInsetEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inventario"
+            android:textSize="50sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_articulo"
+            android:textSize="25sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_name"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="ContentDescription" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inventarioName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre del producto"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_money"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="ContentDescription" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inventarioPrecio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Precio del producto"
+                        android:inputType="number"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_square"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="ContentDescription" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inventarioCantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad del producto"
+                        android:inputType="number"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+
+            android:clickable="true"
+            android:focusable="true"
+            android:checkable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_name"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="ContentDescription" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inventarioCategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Categoria del producto"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:id="@+id/saveProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crear"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

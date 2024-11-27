@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_1"
+        android:enabled="true"
+        android:icon="@drawable/ic_inventory"
+        android:title="@string/inventario"/>
+    <item
+        android:id="@+id/item_2"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/item_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_shop"
+        android:title="@string/carrito"/>
+</menu>

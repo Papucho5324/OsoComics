@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PapeleriaOsoComics</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
+    <string name="registrate">Registrate</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="papeleria_oso_comics">Papeleria Oso Comics</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="terminos_condiciones">Acepto los términos y condiciones</string>
+    <string name="home">Home</string>
+    <string name="inventario">Inventario</string>
+    <string name="carrito">Carrito</string>
+    <string name="papeleria">Papeleria Oso Comics</string>
+    <string name="crear">Crear</string>
+    <string name="agregar_articulo">Agregar articulo</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="menu">Menu</string>
+    <string name="modificar_articulo">Modificar articulo</string>
+    <string name="eliminar_articulo">Eliminar Articulos</string>
+    <string name="precio">Precio</string>
+    <string name="nombre_articulo">Nombre del artículo</string>
+    <string name="articulos_disponibles">Articulos disponibles</string>
+</resources>
